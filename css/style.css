@@ -1,0 +1,13 @@
+/* HEADER */
+h1{
+    font-family: "Edu TAS Beginner", cursive;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 4em;
+}
+.wall{
+    background-image: url(/img/wall.png);
+    height: 150px;
+}
