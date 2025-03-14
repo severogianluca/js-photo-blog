@@ -11,3 +11,9 @@ h1{
     background-image: url(/img/wall.png);
     height: 150px;
 }
+
+/* BODY */
+body{
+    background-image: url(/img/cork.png);
+    height: 100%;
+}
