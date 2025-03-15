@@ -7,18 +7,37 @@ h1{
     padding-top: 40px;
     font-size: 4em;
 }
+
+
 .wall{
-    background-image: url(/img/wall.png);
+    background-image: url(../img/wall.png);
     height: 150px;
 }
 
 /* BODY */
 body{
-    background-image: url(/img/cork.png);
+    background-image: url(../img/cork.png);
     height: 100%;
 }
 
 .container-img{
     padding: 15px 15px 0px 15px;
     margin: 0 auto;
+    position: relative;
 }
+
+.card, .card-img-top {
+    border-radius: 0 ;
+    height: 100%;
+}
+
+.card-body p{
+    font-family: "Edu TAS Beginner", cursive;
+}
+
+.container-foto{
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+
