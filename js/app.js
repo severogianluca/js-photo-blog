@@ -28,8 +28,27 @@ axios.get(api).then ((response) => {
     `
 
     elementContainerCard.innerHTML = items;
+    
+    const containerCard = document.querySelectorAll('.card')
+    console.log(containerCard)
+
+    containerCard.forEach(element =>{
+        element.addEventListener('click', function(){
+            console.log('NAMOOOOOOOO')
+        })
+
+        
+    })
 
     }
+
+    function on() {
+        document.getElementById("overlay").style.display = "block";
+      }
+      
+    function off() {
+        document.getElementById("overlay").style.display = "none";
+        }
 
 
 })
