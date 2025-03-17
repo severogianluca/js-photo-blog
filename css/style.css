@@ -54,3 +54,12 @@ body{
     cursor: pointer; /* Add a pointer on hover */
 }
 
+.overlay-img-container{
+    display: flex;
+    justify-content: center;
+}
+
+.width-img-overlay{
+    width: 600px;
+}
+
