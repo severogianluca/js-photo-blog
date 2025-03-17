@@ -1,17 +1,15 @@
 items = '';
 let api = 'https://lanciweb.github.io/demo/api/pictures/'
 
-const containerCard = document.querySelectorAll('.card')
-
 const elementContainerCard = document.getElementById('container-card');
 const elementOverlay = document.getElementById('overlay');
 const elementOverlayImg = document.getElementById('overlay-img');
 const elementBtnBack = document.getElementById('btn-back')
-
-
 axios.get(api).then ((response) => {
     console.log(response.data)
     for(let i = 0; i < response.data.length; i++){
+
+    
     items += 
     `
            <div class="col-xl-4" style="width: 15rem;">
@@ -33,25 +31,25 @@ axios.get(api).then ((response) => {
     elementContainerCard.innerHTML = items;
     
 
-    
-    console.log(containerCard)
-    
+    const containerCard = document.querySelectorAll('.card')
+
     containerCard.forEach(element =>{
         element.addEventListener('click', function(){
             const displayImg = this.querySelector('.card-img-top')  
             elementOverlayImg.src = displayImg.src;                 
             elementOverlay.classList.replace('d-none', 'd-flex'); 
-
+            elementBtnBack.classList.replace('d-none', 'd-block');  //mi permette di fare add d-none e remove
+            
         })
     })
 
-
-    }
     //evento per il bottone per tornare indietro
     elementBtnBack.addEventListener('click', function(){
         elementOverlay.classList.replace('d-flex', 'd-none'); 
-        console.log(elementBtnBack)
     })
+    
 
+    }
 
 })
+
