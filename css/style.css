@@ -62,7 +62,6 @@ body{
     
 }
 
-
 .width-img-overlay{
     width: 600px;
 }
@@ -77,4 +76,9 @@ body{
 
   .overflow-hidden {
     overflow: hidden;
+}
+
+
+.card {
+    transition: all 0.3s ease-in-out;
 }
