@@ -9,7 +9,6 @@ axios.get(api).then ((response) => {
     console.log(response.data)
     for(let i = 0; i < response.data.length; i++){
 
-    
     items += 
     `
            <div class="col-xl-4" style="width: 15rem;">
@@ -38,14 +37,15 @@ axios.get(api).then ((response) => {
             const displayImg = this.querySelector('.card-img-top')  
             elementOverlayImg.src = displayImg.src;                 
             elementOverlay.classList.replace('d-none', 'd-flex'); 
-            elementBtnBack.classList.replace('d-none', 'd-block');  //mi permette di fare add d-none e remove
-            
+            document.body.classList.add('overflow-hidden')
         })
     })
 
     //evento per il bottone per tornare indietro
     elementBtnBack.addEventListener('click', function(){
         elementOverlay.classList.replace('d-flex', 'd-none'); 
+        document.body.classList.remove('overflow-hidden')
+
     })
     
 
